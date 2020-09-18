@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="yosyu_omikujiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Fbw-k5-f5q">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_head" translatesAutoresizingMaskIntoConstraints="NO" id="ASv-2v-1ED">
+                                <rect key="frame" x="110.5" y="364" width="193" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="9H1-g0-lgx"/>
+                                    <constraint firstAttribute="width" constant="193" id="Ujv-Pz-E1o"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaI-Qg-vpl">
+                                <rect key="frame" x="186" y="236" width="42" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_stick" translatesAutoresizingMaskIntoConstraints="NO" id="mVB-je-IpK">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大吉" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18X-1F-IBu">
+                                        <rect key="frame" x="12" y="0.0" width="18" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="18" id="LHD-ZC-hcq"/>
+                                            <constraint firstAttribute="width" constant="18" id="mic-hV-tfB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0l9-u1-zSn"/>
+                                    <constraint firstItem="18X-1F-IBu" firstAttribute="top" secondItem="gaI-Qg-vpl" secondAttribute="top" id="3jD-qe-i0p"/>
+                                    <constraint firstAttribute="bottom" secondItem="18X-1F-IBu" secondAttribute="bottom" id="DdQ-ur-rqC"/>
+                                    <constraint firstAttribute="trailing" secondItem="mVB-je-IpK" secondAttribute="trailing" id="GvK-zc-4gT"/>
+                                    <constraint firstAttribute="width" constant="42" id="Mms-98-6q6"/>
+                                    <constraint firstAttribute="bottom" secondItem="mVB-je-IpK" secondAttribute="bottom" id="QZ8-hr-RX1"/>
+                                    <constraint firstItem="18X-1F-IBu" firstAttribute="top" secondItem="gaI-Qg-vpl" secondAttribute="top" id="S8a-aW-FJc"/>
+                                    <constraint firstItem="mVB-je-IpK" firstAttribute="leading" secondItem="gaI-Qg-vpl" secondAttribute="leading" id="duL-5h-9uO"/>
+                                    <constraint firstAttribute="bottom" secondItem="18X-1F-IBu" secondAttribute="bottom" id="i9f-4I-YXl"/>
+                                    <constraint firstItem="mVB-je-IpK" firstAttribute="top" secondItem="gaI-Qg-vpl" secondAttribute="top" id="qiN-WL-UXK"/>
+                                    <constraint firstItem="18X-1F-IBu" firstAttribute="centerX" secondItem="gaI-Qg-vpl" secondAttribute="centerX" id="xlG-mU-4xq"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omikuji_body" translatesAutoresizingMaskIntoConstraints="NO" id="87u-CA-5px">
+                                <rect key="frame" x="110.5" y="52" width="193" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="312" id="iNP-pX-0fX"/>
+                                    <constraint firstAttribute="width" constant="193" id="kKs-yg-2Du"/>
+                                </constraints>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-iR-arx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-eY-aVo">
+                                        <rect key="frame" x="0.0" y="110" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="ci1-QT-8ly"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="72"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHs-fg-Hf9">
+                                        <rect key="frame" x="147" y="427" width="120" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="E6F-Gr-2ow"/>
+                                            <constraint firstAttribute="height" constant="42" id="s52-5v-S7b"/>
+                                        </constraints>
+                                        <state key="normal" title="もう一度引く"/>
+                                        <connections>
+                                            <action selector="tapRetryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afj-A2-4sR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="g6c-eY-aVo" secondAttribute="trailing" id="8Cp-i1-j9o"/>
+                                    <constraint firstItem="g6c-eY-aVo" firstAttribute="top" secondItem="u3a-iR-arx" secondAttribute="top" constant="110" id="8US-Jj-D3S"/>
+                                    <constraint firstItem="CHs-fg-Hf9" firstAttribute="centerY" secondItem="u3a-iR-arx" secondAttribute="centerY" id="OPC-lp-Ejk"/>
+                                    <constraint firstItem="CHs-fg-Hf9" firstAttribute="centerX" secondItem="u3a-iR-arx" secondAttribute="centerX" id="qRS-Ob-za2"/>
+                                    <constraint firstItem="g6c-eY-aVo" firstAttribute="leading" secondItem="u3a-iR-arx" secondAttribute="leading" id="qvb-JU-kf7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Fbw-k5-f5q" secondAttribute="bottom" id="0GW-tW-kD8"/>
+                            <constraint firstItem="Fbw-k5-f5q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2eC-Nx-KrV"/>
+                            <constraint firstItem="87u-CA-5px" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="7vk-hh-RzT"/>
+                            <constraint firstItem="u3a-iR-arx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HZ9-M5-sUF"/>
+                            <constraint firstItem="ASv-2v-1ED" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ip0-mo-zRs"/>
+                            <constraint firstItem="Fbw-k5-f5q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xce-Si-WD8"/>
+                            <constraint firstItem="u3a-iR-arx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f4H-aK-0kj"/>
+                            <constraint firstItem="ASv-2v-1ED" firstAttribute="top" secondItem="gaI-Qg-vpl" secondAttribute="bottom" id="fJC-10-GcU"/>
+                            <constraint firstItem="Fbw-k5-f5q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hdP-yZ-sSI"/>
+                            <constraint firstItem="87u-CA-5px" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kvz-ba-2cW"/>
+                            <constraint firstItem="ASv-2v-1ED" firstAttribute="top" secondItem="87u-CA-5px" secondAttribute="bottom" id="q1Z-wU-atU"/>
+                            <constraint firstItem="Fbw-k5-f5q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rWa-iP-ffq"/>
+                            <constraint firstAttribute="bottom" secondItem="u3a-iR-arx" secondAttribute="bottom" id="rvW-kD-cRz"/>
+                            <constraint firstItem="u3a-iR-arx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tmE-xa-S49"/>
+                            <constraint firstItem="Fbw-k5-f5q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u63-Tl-51I"/>
+                            <constraint firstItem="Fbw-k5-f5q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vf7-fd-OGI"/>
+                            <constraint firstItem="gaI-Qg-vpl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zQA-yH-CjD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigLabel" destination="g6c-eY-aVo" id="EPE-GV-EwL"/>
+                        <outlet property="overView" destination="u3a-iR-arx" id="IrJ-GH-4an"/>
+                        <outlet property="stickBottomMargin" destination="fJC-10-GcU" id="zBu-dK-gcE"/>
+                        <outlet property="stickHeight" destination="0l9-u1-zSn" id="eDg-37-xaO"/>
+                        <outlet property="stickLabel" destination="18X-1F-IBu" id="29Z-XU-gIP"/>
+                        <outlet property="stickView" destination="gaI-Qg-vpl" id="JNq-rE-lf7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1024" height="628"/>
+        <image name="omikuji_body" width="1899" height="3074"/>
+        <image name="omikuji_head" width="1906" height="370"/>
+        <image name="omikuji_stick" width="247" height="757"/>
+    </resources>
+</document>
